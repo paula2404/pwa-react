@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  padding: 20px;
+}
+nav {
+  background-color: #3b6b14;
+  color: #ffffff;
+  width: 100%;
+  height: 100px;
+  float: right;
+}
+ul {
+  float: right;
+  padding: 25px;
+  list-style: none;
+}
+li {
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+h1 {
+  color: #3b6b14;
+}
+p {
+  text-align: center;
+}
+.gumb {
+  color: #3b6b14;
+  background-color: #ffffff;
+  font-weight: bold;
+  border: 1px solid #3b6b14;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 5px 12px;
+}
+.gumb:hover {
+  background-color: #3b6b14;
+  color: #ffffff;
+}
+.novac {
+  width: 150px;
+}
+.valuta {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.valuta select {
+  padding: 10px 20px 10px 10px;
+  cursor: pointer;
+  appearance: none;
+  border: 1px solid #ffffff;
+  font-size: 16px;
+  background: transparent;
+  background-image: url('./img/strelica.svg');
+  background-position: right 0px top 50%, 0, 0;
+  background-size: 12px auto, 100%;
+  background-repeat: no-repeat;
+}
+.valuta input {
+  border: 0;
+  background: transparent;
+  font-size: 30px;
+  text-align: right;
+}
+.broj {
+  color: #3b6b14;
+}
+.zamijeni-tečaj {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tečaj {
+  color: #3b6b14;
+  font-size: 14px;
+  padding: 0 10px;
+}
+select:focus,
+input:focus,
+button:focus {
+  outline: 0;
+}
+.country-list-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  text-align: center;
+}
+.country-container {
+  margin: 20px;
+  max-width: 150px;
+}
+.img-container {
+  max-width: 200px;
+  height: 80px;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+@media (max-width: 600px) {
+  .valuta input {
+    width: 200px;
+  }
+}
