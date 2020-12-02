@@ -36,11 +36,12 @@ const Converter = () => {
     <>
       <Nav />
       <main>
-        <img src={novac} className="novac" alt="novac" />
-        <h1>Kalkulator tečajne liste</h1>
-        <p>Odaberite valute i iznose da biste dobili tečaj</p>
+
+
 
         <div className="container">
+        <h1>Kalkulator tečajne liste</h1>
+        <p>Odaberite valute i iznose da biste dobili tečaj</p>
           <div className="valuta">
             <select
               value={currencyFrom}

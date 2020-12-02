@@ -1,8 +1,10 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 body {
-  background-color: #ffffff;
+  background-color: #96c1be;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
@@ -15,44 +17,76 @@ main {
   margin: 0;
   padding: 20px;
 }
+.container{
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  filter: drop-shadow(3px 3px 5px #373a47);
+  padding: 50px;
+}
 nav {
-  background-color: #3b6b14;
-  color: #ffffff;
+  color: #373a47;
   width: 100%;
-  height: 100px;
-  float: right;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.menu-button {
+  height: 44px;
+  cursor: pointer;
+}
+.close-button {
+  height: 24px;
+  margin: 20px 20px 0px 0px;
+  margin-left: auto;
+  cursor: pointer;
+}
+.menu-slider {
+  overflow: hidden;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #373a47;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  transition: 300ms;
+  z-index: 1;
 }
 ul {
-  float: right;
-  padding: 25px;
   list-style: none;
+  margin: 0 20px;
 }
 li {
   font-size: 20px;
+  margin: 20px 0;
 }
 a {
   text-decoration: none;
   color: #ffffff;
 }
 h1 {
-  color: #3b6b14;
+  color: #373a47;
+  padding: 15px;
+  text-align: center;
 }
 p {
   text-align: center;
 }
 .gumb {
-  color: #3b6b14;
-  background-color: #ffffff;
+  color: #373a47;
+  background-color: #f1f1f1;
   font-weight: bold;
-  border: 1px solid #3b6b14;
+  border: 1px solid #373a47;
   cursor: pointer;
   border-radius: 5px;
   font-size: 12px;
   padding: 5px 12px;
 }
 .gumb:hover {
-  background-color: #3b6b14;
-  color: #ffffff;
+  background-color: #373a47;
+  color: #f1f1f1;
 }
 .novac {
   width: 150px;
@@ -67,7 +101,7 @@ p {
   padding: 10px 20px 10px 10px;
   cursor: pointer;
   appearance: none;
-  border: 1px solid #ffffff;
+  border: 1px solid #f1f1f1;
   font-size: 16px;
   background: transparent;
   background-image: url('./img/strelica.svg');
@@ -82,7 +116,7 @@ p {
   text-align: right;
 }
 .broj {
-  color: #3b6b14;
+  color: #373a47;
 }
 .zamijeni-tečaj {
   display: flex;
@@ -90,7 +124,7 @@ p {
   justify-content: space-between;
 }
 .tečaj {
-  color: #3b6b14;
+  color: #373a47;
   font-size: 14px;
   padding: 0 10px;
 }

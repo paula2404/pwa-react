@@ -26,10 +26,11 @@ const Currencies = () => {
     <>
       <Nav />
       <main>
-        <img src={novac} className="novac" alt="novac" />
+
+
+        <div className="container">
         <h1>Valute</h1>
         <p>Odaberite valutu da biste vidjeli koje države koriste tu valutu</p>
-        <div className="container">
           <div className="valuta">
             <select
               onChange={(e) => setCurrency(e.target.value)}
