@@ -4,7 +4,6 @@ import currencyList from '../currencyList';
 
 import axios from 'axios';
 
-import novac from '../img/novac.png';
 
 const Converter = () => {
   const [rate, setRate] = useState(0);

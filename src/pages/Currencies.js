@@ -4,7 +4,6 @@ import axios from 'axios';
 
 import currencyList from '../currencyList';
 
-import novac from '../img/novac.png';
 
 const Currencies = () => {
   const [currency, setCurrency] = useState('');
